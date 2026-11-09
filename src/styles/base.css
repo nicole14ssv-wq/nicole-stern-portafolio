@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--color-ivory); color: var(--color-ink); font-family: var(--font-body); line-height: 1.6; }
+a { color: var(--color-burgundy); text-underline-offset: .25em; }
+a:hover { color: var(--color-burgundy-dark); }
+:focus-visible { outline: 3px solid var(--color-burgundy); outline-offset: 5px; }
+h1, p { margin: 0; }
+h1 { font-family: var(--font-editorial); font-weight: 400; font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.15; overflow-wrap: anywhere; }
+.skip-link { position: fixed; top: 1rem; left: 1rem; padding: .75rem; background: var(--color-white); transform: translateY(-200%); z-index: 10; }
+.skip-link:focus { transform: translateY(0); }
