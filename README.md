@@ -35,7 +35,13 @@ npm run preview
 
 Secciones provisionales: Inicio, Sobre mí, Obra, Proyectos, Exposiciones, Publicaciones y Contacto. La identidad usa borgoña, blanco y marfil, con fuentes locales del sistema. No hay solicitudes a servicios tipográficos externos.
 
-Se utiliza `HashRouter`: las rutas aparecen después de `#` y funcionan en alojamiento estático sin reglas de reescritura. Para publicar en un subdirectorio, configura el `base` de Vite para ese destino antes de compilar. La publicación en GitHub Pages aún no está configurada.
+Se utiliza `HashRouter`: las rutas aparecen después de `#` y funcionan en alojamiento estático sin reglas de reescritura. Vite configura la ruta base `/nicole-stern-portafolio/` para GitHub Pages.
+
+## Despliegue en GitHub Pages
+
+En GitHub, selecciona **Settings → Pages → Build and deployment → Source: GitHub Actions**. Al incorporar el workflow a `main`, cada actualización de esa rama compilará y publicará `dist/` automáticamente. Los pull requests hacia `main` solo validan la compilación, sin publicar. También puedes ejecutar el workflow manualmente desde Actions sobre `main`.
+
+El sitio se publicará en https://nicole14ssv-wq.github.io/nicole-stern-portafolio/. El despliegue utiliza los permisos de `GITHUB_TOKEN`, sin tokens personales. Revisa la ejecución de **Deploy portfolio to GitHub Pages** en Actions para confirmar la publicación.
 
 ## Git y colaboración
 
