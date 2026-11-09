@@ -33,7 +33,7 @@ npm run preview
 - `src/styles/layout.css`: estructura adaptable a móviles.
 - `public/`: futuros recursos estáticos reales.
 
-Secciones provisionales: Inicio, Sobre mí, Obra, Proyectos, Exposiciones, Publicaciones y Contacto. La identidad usa borgoña, blanco y marfil, con fuentes locales del sistema. No hay solicitudes a servicios tipográficos externos.
+Secciones provisionales: Inicio, Sobre mí, Obra, Proyectos, Exposiciones, Publicaciones y Contacto. La identidad usa exclusivamente borgoña (`#722F45`), negro carbón (`#111113`) y blanco cálido (`#F4F0EB`). El fondo principal es carbón; los textos son blanco cálido y los elementos destacados e interactivos incorporan borgoña. Las animaciones respetan la preferencia de movimiento reducido. La tipografía utiliza fuentes locales del sistema. No hay solicitudes a servicios tipográficos externos.
 
 Se utiliza `HashRouter`: las rutas aparecen después de `#` y funcionan en alojamiento estático sin reglas de reescritura. Vite configura la ruta base `/nicole-stern-portafolio/` para GitHub Pages.
 
